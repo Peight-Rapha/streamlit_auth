@@ -5,6 +5,7 @@ print('teste')
 print('teste')
 print('teste')
 print('teste')
+print('teste')
 
 
 # escreva algo para mostrar no streamlit
