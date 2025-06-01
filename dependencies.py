@@ -12,3 +12,18 @@ USERSERVER = os.getenv('USERSERVER')
 PASSWORD = os.getenv('PASSWORD')
 PORT = os.getenv('PORT')
 
+
+# Criando decorador '@contextmanager' para gerenciar a conexão com o banco de dados
+
+@contextmanager
+def instance_cursor():
+    # Realizando conexão com o banco de dados
+    connection = psycopg2.connect(
+        database=DATABASE,
+        host=HOST,
+        user=USERSERVER,
+        password=PASSWORD,
+        port=PORT
+    )
+
+
