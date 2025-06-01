@@ -25,5 +25,16 @@ def instance_cursor():
         password=PASSWORD,
         port=PORT
     )
+    # criando um cursor para executar comandos SQL
+    cursor = connection.cursor()
+    try:
+        # retornando sob demanda
+        yield cursor
+    finally:
+        if (connection):
+            # fechando o cursor
+            cursor.close()
+            print('Conexao com PostgreSQL fechada')
+
 
 

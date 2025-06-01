@@ -2,7 +2,6 @@ import streamlit as st
 import streamlit_authenticator as stauth
 # Criando Função de autenticação
 
-<<<<<<< HEAD
 # Tempo de expiração de login em dias
 COOKIE_EXPIRY_DAYS = 30
 
@@ -100,16 +99,3 @@ def usuario_form():
 # Base do Programa
 if __name__ == '__main__':
     main()
-=======
-print('teste')
-print('teste')
-print('teste')
-print('teste')
-print('teste')
-print('teste')
-print('teste')
-
-
-# escreva algo para mostrar no streamlit
-st.title('Teste de autenticação com Streamlit')
->>>>>>> 7761a26f855bf1878a3a331df36979f5826ad4a7
